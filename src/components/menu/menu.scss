@@ -1,0 +1,18 @@
+@import './../../styles/common.scss';
+
+.menu {
+    display: block;
+}
+
+.menu__right {
+    float: right;
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li > a {
+    padding: 0 2em;
+}
