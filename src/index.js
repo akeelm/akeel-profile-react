@@ -39,13 +39,14 @@ class Index extends React.Component {
 
     return (
       <div>
+        <div className="top_of_page"></div>
         {menu}
         <Banner mainText="Akeel Mughal" secondaryText="fullstack developer" />
         <ContentSection sectionName="About" />
         <ContentSection sectionName="Projects" />
         <ContentSection sectionName="Testimonials" />
         <ContentSection sectionName="Contact" />
-        <ScrollButton screenScrollY={this.state.screenScrollY} />
+        <ScrollButton screenScrollY={this.state.screenScrollY} topPageClass=".top_of_page" /> 
       </div>
     )
   }

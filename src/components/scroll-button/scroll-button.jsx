@@ -5,6 +5,15 @@ import './scroll-button.scss';
 export default class ScrollButton extends React.Component {
     constructor() {
         super();
+
+        this.scrollToTop = this.scrollToTop.bind(this);
+    }
+
+    scrollToTop() {
+        document.querySelector(this.props.topPageClass).scrollIntoView({
+            behavior: 'smooth'
+        });
+        console.log('ScrollButton firing to top');
     }
 
     render() {
@@ -13,7 +22,7 @@ export default class ScrollButton extends React.Component {
             'scroll_button';
 
         return (
-          <div className={scrollButtonOnClass}>
+          <div className={scrollButtonOnClass} onClick={this.scrollToTop}>
             <i className="fa fa-chevron-up fa-lg"></i>
           </div>  
         );
