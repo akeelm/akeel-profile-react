@@ -62,6 +62,10 @@ $margin-left-small: 0.5em;
     transition:height 800ms ease-in;
 }
 
+.mobile_menu__list li:last-child {
+    border-bottom: none;
+}
+
 .mobile_menu__list--open {
     height: auto;
     visibility: visible;
