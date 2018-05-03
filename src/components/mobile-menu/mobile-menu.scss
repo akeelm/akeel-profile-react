@@ -42,24 +42,20 @@ $margin-left-small: 0.5em;
 .mobile_menu__list {
     list-style: none;
     padding-left: 0em;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    visibility: hidden;
     margin-left: $margin-left;
     @include respond-to(small) {
         margin-left: $margin-left-small;
     }
-    transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -webkit-transition: all 200ms ease-in;
+    transition:max-height 500ms ease-out;
+    -webkit-transition:max-height 500ms ease-out;
+    -moz-transition:max-height 500ms ease-out;
 }
 
 .mobile_menu__list li {
     border-bottom: 1px solid #eaeaea;
     padding: 1.25em 0;
-    -webkit-transition:height 800ms ease-in;
-    -moz-transition:height 800ms ease-in;
-    transition:height 800ms ease-in;
 }
 
 .mobile_menu__list li:last-child {
@@ -67,7 +63,9 @@ $margin-left-small: 0.5em;
 }
 
 .mobile_menu__list--open {
-    height: auto;
-    visibility: visible;
+    max-height: 20em;
     display: block;
+    transition:max-height 500ms ease-in;
+    -webkit-transition:max-height 500ms ease-in;
+    -moz-transition:max-height 500ms ease-in;
 }
