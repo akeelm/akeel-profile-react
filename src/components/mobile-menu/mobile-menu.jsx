@@ -26,8 +26,8 @@ export default class MobileMenu extends React.Component {
 
         return (
             <nav className="mobile_menu">
-                <div className="mobile_menu__toggle_container">
-                    <div className={mobileToggleClass} onClick={this.toggleMenuClass}>
+                <div className="mobile_menu__toggle_container" onClick={this.toggleMenuClass}>
+                    <div className={mobileToggleClass}>
                         <span></span>
                         <span></span>
                         <span></span>
