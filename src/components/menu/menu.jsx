@@ -14,16 +14,16 @@ export default class Menu extends React.Component {
             <nav className="menu">
                 <ul>
                     <li>
-                        <Link href="#" title="ABOUT"></Link>
+                        <Link href="#" title="ABOUT" sectionName="About"></Link>
                     </li>
                     <li>
-                        <Link href="#" title="PROJECTS"></Link>
+                        <Link href="#" title="PROJECTS" sectionName="Projects"></Link>
                     </li>
                     <li>
-                        <Link href="#" title="TESTIMONIALS"></Link>
+                        <Link href="#" title="TESTIMONIALS" sectionName="Testimonials"></Link>
                     </li>
                     <li>
-                        <Link href="#" title="CONTACT"></Link>
+                        <Link href="#" title="CONTACT" sectionName="Contact"></Link>
                     </li>
                 </ul>
             </nav>
