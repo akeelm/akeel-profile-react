@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './mobile-menu.scss';
 
+import Link from './../link/link.jsx';
+
 export default class MobileMenu extends React.Component {
     constructor() {
         super();
@@ -35,16 +37,16 @@ export default class MobileMenu extends React.Component {
                 </div>
                 <ul className={mobileMenuClass}>
                     <li>
-                        <a>About</a>
+                        <Link href="#" title="ABOUT"></Link>
                     </li>
                     <li>
-                        <a>Projects</a>
+                        <Link href="#" title="PROJECTS"></Link>
                     </li>
                     <li>
-                        <a>Testimonials</a>
+                        <Link href="#" title="TESTIMONIALS"></Link>
                     </li>
                     <li>
-                        <a>Contact</a>
+                        <Link href="#" title="CONTACT"></Link>
                     </li>
                 </ul>
             </nav>

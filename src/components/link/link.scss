@@ -1,0 +1,12 @@
+@import './../../styles/colors.scss';
+
+.link {
+    text-decoration: none;
+    color:$black;
+    transition: color 500ms ease;
+}
+
+.link:hover {
+    transition: color 400ms ease;
+    color:$light-gray;
+}
