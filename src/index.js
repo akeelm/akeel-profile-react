@@ -7,6 +7,8 @@ import ContentSection from './components/content-section/content-section.jsx';
 import ScreensizeUpdater from './components/screen-size-updater/screen-size-updater.jsx';
 import ScrollButton from './components/scroll-button/scroll-button.jsx';
 
+import AboutContent from './content/about/about.jsx';
+
 import 'font-awesome/scss/font-awesome.scss';
 import './index.scss';
 
@@ -42,7 +44,7 @@ class Index extends React.Component {
         <div className="top_of_page"></div>
         {menu}
         <Banner mainText="Akeel Mughal" secondaryText="fullstack developer" />
-        <ContentSection sectionName="About" />
+        <AboutContent />
         <ContentSection sectionName="Projects" />
         <ContentSection sectionName="Testimonials" />
         <ContentSection sectionName="Contact" />

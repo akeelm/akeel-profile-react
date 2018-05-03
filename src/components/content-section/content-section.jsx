@@ -9,8 +9,9 @@ export default class ContentSection extends React.Component {
 
     render() {
         return (
-          <div id={this.props.sectionName} className="content-section">
-            <h1>{this.props.sectionName}</h1>
+          <div className="content-section">
+            <div id={this.props.sectionName}></div>
+            {this.props.children}
           </div>  
         );
     }

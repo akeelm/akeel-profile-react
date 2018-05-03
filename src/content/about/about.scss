@@ -1,0 +1,13 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.about__profile_image {
+    width: 20%;
+    border-radius: 15em;
+    margin: 0 auto;
+}

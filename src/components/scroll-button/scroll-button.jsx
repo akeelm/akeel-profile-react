@@ -13,7 +13,6 @@ export default class ScrollButton extends React.Component {
         document.querySelector(this.props.topPageClass).scrollIntoView({
             behavior: 'smooth'
         });
-        console.log('ScrollButton firing to top');
     }
 
     render() {
