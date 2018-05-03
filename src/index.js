@@ -23,8 +23,10 @@ class Index extends React.Component {
   }
 
   render() {
-    let menu = (this.state.screenBreakpoint === 'small' || this.state.screenBreakpoint === 'small-medium') ?
-      <MobileMenu /> : <Menu />;
+    let menu = (
+      this.state.screenBreakpoint === 'small' || 
+      this.state.screenBreakpoint === 'small-medium') 
+      ? <MobileMenu /> : <Menu />;
 
     return (
       <div>

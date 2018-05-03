@@ -1,11 +1,8 @@
 @import './../../styles/common.scss';
 
 .menu {
-    display: block;
-}
-
-.menu__right {
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
     list-style: none;
 }
 
@@ -14,5 +11,5 @@
 }
 
 .menu li > a {
-    padding: 0 2em;
+    margin: 0 2em;
 }

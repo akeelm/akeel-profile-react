@@ -9,25 +9,22 @@ export default class Menu extends React.Component {
 
     render() {
         return (
-            <div>
-                <nav className="menu">
-                    <ul className="menu__right">
-                        <li>
-                            <a>About</a>
-                        </li>
-                        <li>
-                            <a>Projects</a>
-                        </li>
-                        <li>
-                            <a>Testimonials</a>
-                        </li>
-                        <li>
-                            <a>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="clear"></div>
-            </div>
+            <nav className="menu">
+                <ul>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Testimonials</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
+            </nav>
         );
     }
 }

@@ -5,34 +5,49 @@ import './mobile-menu.scss';
 export default class MobileMenu extends React.Component {
     constructor() {
         super();
+
+        this.state = { menuOpen : false };
+        this.toggleMenuClass = this.toggleMenuClass.bind(this);
     }
 
+    toggleMenuClass() {
+        const currentState = this.state.menuOpen;
+        this.setState({ menuOpen : !currentState });
+    };
+
     render() {
+        let mobileToggleClass = (this.state.menuOpen) ? 
+            'mobile_menu__toggle mobile_menu__toggle--open' : 
+            'mobile_menu__toggle';
+
+        let mobileMenuClass = (this.state.menuOpen) ?
+            'mobile_menu__list mobile_menu__list--open' : 
+            'mobile_menu__list';
+
         return (
-            <div>
-                <nav className="mobile_menu">
-                    <div className="mobile__toggle">
+            <nav className="mobile_menu">
+                <div className="mobile_menu__toggle_container">
+                    <div className={mobileToggleClass} onClick={this.toggleMenuClass}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <ul className="mobile_menu__left">
-                        <li>
-                            <a>About</a>
-                        </li>
-                        <li>
-                            <a>Projects</a>
-                        </li>
-                        <li>
-                            <a>Testimonials</a>
-                        </li>
-                        <li>
-                            <a>Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div className="clear"></div>
-            </div>
+                </div>
+                <ul className={mobileMenuClass}>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a>Testimonials</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
+            </nav>
         );
     }
 }

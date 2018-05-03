@@ -1,25 +1,69 @@
 @import './../../styles/common.scss';
+@import './../../styles/screen-breakpoints.scss';
 
-.mobile_menu {
-    margin: 1em;
+$margin-left: 1em;
+$margin-left-small: 0.5em;
+
+.mobile_menu__toggle {
+    margin: $margin-left;
+    @include respond-to(small) {
+        margin-left: $margin-left-small;
+        margin-top: 1em;
+    }
     display: block;
 }
 
-.mobile_menu__left {
-    list-style: none;
-    padding-left: 0em;
-    display: none;
+.mobile_menu div {
+    transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
 }
 
-.mobile_menu__left li {
-    margin-top: 1.5em;
+.mobile_menu__toggle_container {
+    width: 50px;
+    cursor: pointer;
 }
 
-.mobile__toggle span {
+.mobile_menu__toggle span {
     width: 30px;
     height: 4px;
     margin-bottom: 6px;
     border-radius: 1000px;
     background: #8f8f8f;
+    display: block;
+}
+
+.mobile_menu__toggle--open {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.mobile_menu__list {
+    list-style: none;
+    padding-left: 0em;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    margin-left: $margin-left;
+    @include respond-to(small) {
+        margin-left: $margin-left-small;
+    }
+    transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
+}
+
+.mobile_menu__list li {
+    border-bottom: 1px solid #eaeaea;
+    padding: 1.25em 0;
+    -webkit-transition:height 800ms ease-in;
+    -moz-transition:height 800ms ease-in;
+    transition:height 800ms ease-in;
+}
+
+.mobile_menu__list--open {
+    height: auto;
+    visibility: visible;
     display: block;
 }

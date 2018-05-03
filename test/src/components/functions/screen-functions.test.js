@@ -1,7 +1,7 @@
 import assert from 'assert';
 import * as screenFunctions from './../../../../src/functions/screen-functions';
 
-let window = { screen: { width: 680 } };
+let window = { innerWidth: 680 };
 
 let state = { screenBreakpoint : 'lge', someotherStuff : 123 };
 
@@ -17,7 +17,7 @@ describe('Screen functions', function () {
     describe('getScreenBreakpoint(window)', function () {
         it ('should return a screen breakpoint', function () {
             let result;
-            window.screen.width = 400;
+            window.innerWidth = 400;
             result = screenFunctions.getScreenBreakpoint(window);
             assert.equal(result, 'small');
         });
@@ -30,19 +30,19 @@ describe('Screen functions', function () {
                 state = obj; 
             }
 
-            window.screen.width = 500;
+            window.innerWidth = 500;
             screenFunctions.updateStateWithScreenBreakpoint(window, _this);
             assert.equal(state.screenBreakpoint, 'small');
 
-            window.screen.width = 650;
+            window.innerWidth = 650;
             screenFunctions.updateStateWithScreenBreakpoint(window, _this);
             assert.equal(state.screenBreakpoint, 'small-medium');
 
-            window.screen.width = 1000;
+            window.innerWidth = 1000;
             screenFunctions.updateStateWithScreenBreakpoint(window, _this);
             assert.equal(state.screenBreakpoint, 'medium');
 
-            window.screen.width = 1201;
+            window.innerWidth = 1201;
             screenFunctions.updateStateWithScreenBreakpoint(window, _this);
             assert.equal(state.screenBreakpoint, 'large');
         });
