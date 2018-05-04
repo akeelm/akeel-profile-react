@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './mobile-menu.scss';
 
 import Link from './../link/link.jsx';
+import MenuItems from './../../content/menu-items/menu-items.jsx';
 
 export default class MobileMenu extends React.Component {
     constructor() {
@@ -36,18 +37,7 @@ export default class MobileMenu extends React.Component {
                     </div>
                 </div>
                 <ul className={mobileMenuClass}>
-                    <li>
-                        <Link href="#" title="ABOUT" sectionName="About"></Link>
-                    </li>
-                    <li>
-                        <Link href="#" title="PROJECTS" sectionName="Projects"></Link>
-                    </li>
-                    <li>
-                        <Link href="#" title="TESTIMONIALS" sectionName="Testimonials"></Link>
-                    </li>
-                    <li>
-                        <Link href="#" title="CONTACT" sectionName="Contact"></Link>
-                    </li>
+                    <MenuItems />
                 </ul>
             </nav>
         );

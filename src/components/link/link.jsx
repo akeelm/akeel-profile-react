@@ -12,7 +12,8 @@ export default class Link extends React.Component {
     scrollToSection(e) {
         e.preventDefault();
         document.querySelector(`#${this.props.sectionName}`).scrollIntoView({
-            behavior: 'smooth'
+            behavior: 'smooth',
+            block: 'start'
         });
     }
 

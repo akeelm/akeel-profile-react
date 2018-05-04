@@ -1,3 +1,5 @@
+@import './../../styles/screen-breakpoints.scss';
+
 .about {
     display: flex;
     flex-direction: column;
@@ -8,6 +10,15 @@
 
 .about__profile_image {
     width: 20%;
+    @include respond-to(small) {
+        width: 75%
+    }
+    @include respond-to(small-medium) {
+        width: 50%
+    }
+    @include respond-to(large) {
+        width: 20%
+    }
     border-radius: 15em;
     margin: 0 auto;
 }
