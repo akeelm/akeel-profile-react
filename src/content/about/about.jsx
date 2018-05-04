@@ -35,10 +35,6 @@ export default class AboutContent extends React.Component {
                         I take pride in writing clean, reusable and efficient code, but most importantly I enjoy challenges 
                         and delivering creative solutions.
                     </p>
-
-                    <p>
-                        I’m also capable of basic design – this site was designed by me.
-                    </p>
                 </div>
             </ContentSection>
         );

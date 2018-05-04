@@ -9,15 +9,17 @@
 }
 
 .about__profile_image {
-    width: 20%;
     @include respond-to(small) {
         width: 75%
     }
     @include respond-to(small-medium) {
-        width: 50%
+        width: 40%
+    }
+    @include respond-to(medium) {
+        width: 20%
     }
     @include respond-to(large) {
-        width: 20%
+        width: 25%
     }
     border-radius: 15em;
     margin: 0 auto;

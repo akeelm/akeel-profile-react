@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto');
+@import './../../styles/colors.scss';
+@import './../../styles/screen-breakpoints.scss';
+
 .content-section {
     display: block;
     width: 70%;
     margin: auto;
+}
+
+.content-section h1 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    @include respond-to(small) {
+        font-size: 2em;
+    }
+}
+
+.content-section p {
+    font-weight: 100;
+    color: $medium-gray;
 }
