@@ -15,10 +15,10 @@ export default class MenuItems extends React.Component {
                     <Link href="#" title="ABOUT" sectionName="About"></Link>
                 </li>
                 <li>
-                    <Link href="#" title="PROJECTS" sectionName="Projects"></Link>
+                    <Link href="#" title="TESTIMONIALS" sectionName="Testimonials"></Link>
                 </li>
                 <li>
-                    <Link href="#" title="TESTIMONIALS" sectionName="Testimonials"></Link>
+                    <Link href="#" title="PROJECTS" sectionName="Projects"></Link>
                 </li>
                 <li>
                     <Link href="#" title="CONTACT" sectionName="Contact"></Link>

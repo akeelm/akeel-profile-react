@@ -48,8 +48,8 @@ class Index extends React.Component {
         {menu}
         <Banner mainText="Akeel Mughal" secondaryText="fullstack developer" />
         <About />
-        <Projects />
         <Testimonials />
+        <Projects />
         <Contact />
         <ScrollButton screenScrollY={this.state.screenScrollY} topPageClass=".top_of_page" /> 
       </div>

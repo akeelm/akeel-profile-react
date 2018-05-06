@@ -13,10 +13,53 @@ export default class TestimonialsContent extends React.Component {
         return (
             <ContentSection sectionName="Testimonials">
                 <div className="testimonials">
-                    <h1>Testimonials</h1>
-                    <p>
-                        Some testimonials...
-                    </p>
+                    <h1>Testimonials.</h1>
+
+                    <section>
+                        <i>
+                            <p>
+                                “IT Energy Systems and Consulting Limited is a UK company that builds software solutions for the oil and shipping industries. Examples of our products include www.isfwatchkeeper.com which is a market leading product in the international shipping industry. We work with talented individuals who are self-motivated and driven to use technology for positive change
+                            </p>
+                            <p>
+                                Akeel Mughal worked for IT Energy on a contract basis between March – December 2017. The technologies used were: React, ES6, WebPack, node.js, VB.NET, C#, ASP.NET, WCF and SQL Server. Akeel is a highly professional and skilled developer with a particular interest in innovation. He is also a great team player and a lot of fun to work with. He would be an asset to any team needing specialised knowledge and team capability”
+                            </p>
+                        </i>
+                        <div className="testimonials__person">
+                            Michael Papageorge  -
+                            Co-founder / Managing Director -
+                            IT Energy
+                        </div>
+                    </section>
+
+                    <section>
+                        <i>
+                            <p>
+                                “Akeel was hired on short notice to fly out to Berlin for a week long contract to assist at Cisco Live 2017. The brief was to assist delegates with coding robots to autonomously solve a maze.
+                            </p>
+                            <p>
+                                He proved to be approachable, friendly and confident with the delegates, and was enthusiastic about understanding our requirements. Akeel was a pleasure to work with.”
+                            </p>
+                        </i>
+                        <div className="testimonials__person">
+                            Zara Kerwood  -
+                            Digital Project Manager -
+                            George P. Johnson
+                        </div>
+                    </section>
+
+                    <section>
+                        <i>
+                            <p>
+                                “Working with Akeel has been a great experience. He always responded to my requests quickly and provided us with good solutions quickly! Would hire again!”
+                            </p>
+                        </i>
+                        <div className="testimonials__person">
+                            Ole Andreas Biggey -
+                            CEO -
+                            Box of Words 
+                        </div>
+                    </section>
+
                 </div>
             </ContentSection>
         );

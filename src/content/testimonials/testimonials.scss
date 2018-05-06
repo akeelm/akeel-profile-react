@@ -1,0 +1,16 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.testimonials section {
+    margin-bottom: 2.5em;
+}
+
+.testimonials__person {
+    font-weight: 700;
+    font-size: small;
+}
