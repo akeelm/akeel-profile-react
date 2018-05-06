@@ -13,6 +13,8 @@ import RALogo from './../../assets/images/projects/RA-logo.png';
 import SportEnglandLogo from './../../assets/images/projects/SportEngland.png';
 import FigleavesLogo from './../../assets/images/projects/figleaves_logo.png';
 
+import CiscoPhoto from './../../assets/images/projects/cisco-photo.jpg';
+
 export default class ProjectsContent extends React.Component {
     constructor() {
         super();
@@ -88,7 +90,7 @@ export default class ProjectsContent extends React.Component {
                             <p>
                                 Oval is a rudimentary subset of the C language, an imperative language with only very basic types supported. In this case ints and floats, adding to the challenge of creating a good solution.
                             </p>
-                            <p><img src="http://akeel.co.uk/wp-content/uploads/2017/06/58ff80942cd10.jpg" alt="Sphero Maze thumbnail" width="600" height="400" class="aligncenter size-medium wp-image-148" /></p>
+                            <p><img className="projects__photo" src={CiscoPhoto} alt="Sphero Maze" /></p>
                         </div>
                     </section>
 
@@ -117,7 +119,7 @@ export default class ProjectsContent extends React.Component {
 
                     <section className="projects__container">
                         <div className="projects__logos">
-                            <div className="projects__logo">
+                            <div className="projects__logo projects__logo--darker">
                                 <img className="projects__image projects__image--fit" src={FuelPricesOnlineLogo} alt="Fuel Prices Online" />
                             </div>
                         </div>

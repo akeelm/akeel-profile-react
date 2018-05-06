@@ -12,7 +12,6 @@
 .projects hr {
     border: 0;
     height: 1px;
-    // background-image: linear-gradient(to right, $lighter-gray, $lighter-gray, $lighter-gray);
     background-color: lighten($lighter-gray, 5%);
 }
 
@@ -45,6 +44,10 @@
     align-items: center;
 }
 
+.projects__logo--darker {
+    background-color: $gray;
+}
+
 .projects__image {
     width: inherit;
     height: inherit;
@@ -52,6 +55,13 @@
 
 .projects__image--fit {
     width: 3em;
-    height: 2em;
-    margin-top: 1em;
+    height: 1em;
+    margin-top: 1.5em;
+}
+
+.projects__photo {
+    width: 30em;
+    @include respond-to(small) {
+        width: 15em;
+    }
 }

@@ -1,7 +1,65 @@
+@import './../../styles/colors.scss';
+@import './../../styles/screen-breakpoints.scss';
+
 .contact {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: small;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__container section {
+    margin-bottom: 1em;
+    @include respond-to(small) {
+        width: 100%;
+    }
+    @include respond-to(small-medium) {
+        width: 100%;
+    }
+    @include respond-to(medium) {
+        width: 100%;
+    }
+    @include respond-to(large) {
+        width: 33%;
+    }
+}
+
+.contact__company_info {
+    order: 3;
+    width: 20em;
+}
+
+.contact__company_info--smaller {
+    font-size: smaller;
+}
+
+.contact__email a {
+    text-decoration: none;
+    font-size: larger;
+    color: dodgerblue;
+    transition: color 400ms ease;
+}
+
+.contact__email a:hover {
+    transition: color 400ms ease;
+    color:$light-gray;
+}
+
+.contact__links {
+    font-size: 4em;
+}
+
+.contact__links a {
+    margin: 0.25em;
 }
