@@ -1,0 +1,36 @@
+@import './../../styles/screen-breakpoints.scss';
+@import './../../styles/colors.scss';
+
+.projects h1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.projects__logo {
+    height: 4em;
+    width: 4em;
+    border: solid 2px $lighter-gray;
+    background-color: lighten($light-gray, 20%);
+    border-radius: 50%;
+    padding: 0 !important;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.projects__logo__image {
+    width: inherit;
+    height: inherit;
+}
+
+.projects__logo__image--fit {
+    width: 3em;
+    height: 2em;
+    margin-top: 1em;
+}
