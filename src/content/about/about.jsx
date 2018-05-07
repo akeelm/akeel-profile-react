@@ -19,7 +19,7 @@ export default class AboutContent extends React.Component {
                     <h1>About me.</h1>
                     <p>
                        Hi there! I’m a full stack developer with more than ten years of experience in 
-                       development and over a decade in tech. My experience has been gained working in 
+                       development. My experience has been gained working in 
                        a variety of industries, working for companies, big and small, in London.
                     </p>
 

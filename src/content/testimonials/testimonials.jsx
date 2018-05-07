@@ -18,6 +18,22 @@ export default class TestimonialsContent extends React.Component {
                     <section>
                         <i>
                             <p>
+                                "Akeel was hired by us to develop and troubleshoot a software running a prototype medical device, requiring understanding of the clinical problem, the electronics and implementation. 
+                            </p>
+                            <p>
+                                We were highly impressed by Akeel's engagement with this project, which spanned from the conceptual phase to the troubleshooting at the commissioning. Akeel did a brilliant job, engaging with stakeholder without programming experience, he acquired the necessary background knowledge very quickly and efficiently put in place the software framework, spanning several languages and I/O constraints. He did so enthusiastically and communicated very efficiently to the whole team. We all were very impressed and cannot recommend him enough. We would, without hesitation, work with Akeel in the future and very much hope to do so!"
+                            </p>
+                        </i>
+                        <div className="testimonials__person">
+                            Dr. Garrit Koller -
+                            Clinical Academic in Biomaterials, Biomimetics and Biophotonics -
+                            King's College London
+                        </div>
+                    </section>
+
+                    <section>
+                        <i>
+                            <p>
                                 “IT Energy Systems and Consulting Limited is a UK company that builds software solutions for the oil and shipping industries. Examples of our products include www.isfwatchkeeper.com which is a market leading product in the international shipping industry. We work with talented individuals who are self-motivated and driven to use technology for positive change
                             </p>
                             <p>
