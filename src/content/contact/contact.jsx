@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './contact.scss';
 
 import ContentSection from './../../components/content-section/content-section.jsx';

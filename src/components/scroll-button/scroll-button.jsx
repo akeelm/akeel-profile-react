@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import './scroll-button.scss';
 
 export default class ScrollButton extends React.Component {
@@ -27,3 +27,8 @@ export default class ScrollButton extends React.Component {
         );
     }
 }
+
+ScrollButton.propTypes = {
+    topPageClass: PropTypes.string,
+    screenScrollY: PropTypes.number
+};

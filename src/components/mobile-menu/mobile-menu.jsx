@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './mobile-menu.scss';
 
-import Link from './../link/link.jsx';
 import MenuItems from './../../content/menu-items/menu-items.jsx';
 
 export default class MobileMenu extends React.Component {
@@ -16,7 +14,7 @@ export default class MobileMenu extends React.Component {
     toggleMenuClass() {
         const currentState = this.state.menuOpen;
         this.setState({ menuOpen : !currentState });
-    };
+    }
 
     render() {
         let mobileToggleClass = (this.state.menuOpen) ? 

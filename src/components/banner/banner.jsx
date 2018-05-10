@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import './banner.scss';
 
 export default class Banner extends React.Component {
@@ -16,3 +16,8 @@ export default class Banner extends React.Component {
         );
     }
 }
+
+Banner.propTypes = {
+    mainText: PropTypes.string,
+    secondaryText: PropTypes.node
+};

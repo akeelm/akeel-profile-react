@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import './content-section.scss';
 
 export default class ContentSection extends React.Component {
@@ -16,3 +16,8 @@ export default class ContentSection extends React.Component {
         );
     }
 }
+
+ContentSection.propTypes = {
+    sectionName: PropTypes.string,
+    children: PropTypes.node
+};

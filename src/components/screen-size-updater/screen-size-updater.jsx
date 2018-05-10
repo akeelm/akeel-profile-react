@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import { updateStateWithScreenBreakpoint } from './../../functions/screen-functions';
 
@@ -9,7 +8,7 @@ export default class ScreenSizeUpdater extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener("resize", updateStateWithScreenBreakpoint(window, this));
+        window.addEventListener('resize', updateStateWithScreenBreakpoint(window, this));
     }
 
     render() {

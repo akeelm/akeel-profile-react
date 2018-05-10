@@ -28,7 +28,7 @@ describe('Screen functions', function () {
             let _this = {};
             _this.setState = function (obj) {
                 state = obj; 
-            }
+            };
 
             window.innerWidth = 500;
             screenFunctions.updateStateWithScreenBreakpoint(window, _this);

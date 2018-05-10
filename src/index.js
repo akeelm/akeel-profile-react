@@ -1,10 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Menu from './components/menu/menu.jsx';
 import MobileMenu from './components/mobile-menu/mobile-menu.jsx';
 import Banner from './components/banner/banner.jsx';
-import ContentSection from './components/content-section/content-section.jsx';
-import ScreensizeUpdater from './components/screen-size-updater/screen-size-updater.jsx';
 import ScrollButton from './components/scroll-button/scroll-button.jsx';
 
 import About from './content/about/about.jsx';
@@ -24,16 +22,16 @@ class Index extends React.Component {
     this.state = { 
       screenBreakpoint : '', 
       screenScrollY: 0 
-    }
+    };
   }
 
   componentDidMount() {
     updateStateWithScreenBreakpoint(window, this);
-    window.addEventListener("resize", () => { updateStateWithScreenBreakpoint(window, this) });
+    window.addEventListener('resize', () => { updateStateWithScreenBreakpoint(window, this); });
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       this.setState({screenScrollY : window.scrollY});
-    })
+    });
   }
 
   render() {
@@ -53,8 +51,8 @@ class Index extends React.Component {
         <Contact />
         <ScrollButton screenScrollY={this.state.screenScrollY} topPageClass=".top_of_page" /> 
       </div>
-    )
+    );
   }
-};
+}
 
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<Index />, document.getElementById('index'));

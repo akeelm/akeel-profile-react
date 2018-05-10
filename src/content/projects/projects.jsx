@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './projects.scss';
 
 import ContentSection from './../../components/content-section/content-section.jsx';
@@ -24,7 +23,7 @@ export default class ProjectsContent extends React.Component {
         return (
             <ContentSection sectionName="Projects">
                 <div className="projects">
-                    <h1>What I've worked on.</h1>
+                    <h1>What I&apos;ve worked on.</h1>
 
                     <section className="projects__container">
                         <div className="projects__logos">
