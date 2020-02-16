@@ -1,16 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './scroll-button.scss';
 
-export default class ScrollButton extends React.Component {
-    constructor() {
-        super();
+export interface IScrollButtonProps {
+  topPageClass: string;
+  screenScrollY: number;
+}
+
+export default class ScrollButton extends React.Component<IScrollButtonProps, {}> {
+    constructor(props: IScrollButtonProps) {
+        super(props);
 
         this.scrollToTop = this.scrollToTop.bind(this);
     }
 
     scrollToTop() {
-        document.querySelector(this.props.topPageClass).scrollIntoView({
+        document.querySelector(this.props.topPageClass)?.scrollIntoView({
             behavior: 'smooth'
         });
     }
@@ -27,8 +31,3 @@ export default class ScrollButton extends React.Component {
         );
     }
 }
-
-ScrollButton.propTypes = {
-    topPageClass: PropTypes.string,
-    screenScrollY: PropTypes.number
-};

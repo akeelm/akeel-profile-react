@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Menu from './components/menu/menu';
 import MobileMenu from './components/mobile-menu/mobile-menu';
 import { Banner } from './components/banner/banner';
-import ScrollButton from './components/scroll-button/scroll-button.jsx';
+import ScrollButton from './components/scroll-button/scroll-button';
 
 import About from './content/about/about.jsx';
 import Projects from './content/projects/projects.jsx';
