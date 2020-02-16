@@ -6,7 +6,7 @@ import { Banner } from './components/banner/banner';
 import ScrollButton from './components/scroll-button/scroll-button';
 
 import About from './content/about/about';
-import Projects from './content/projects/projects.jsx';
+import Projects from './content/projects/projects';
 import Testimonials from './content/testimonials/testimonials.jsx';
 import Contact from './content/contact/contact';
 
