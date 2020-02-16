@@ -15,15 +15,20 @@ import './index.scss';
 
 import { updateStateWithScreenBreakpoint } from './functions/screen-functions';
 
-class Index extends React.Component {
-  constructor() {
-    super();
+export interface IIndexState {
+  screenBreakpoint: string;
+  screenScrollY: number;
+}
 
-    this.state = { 
+class Index extends React.Component<{}, IIndexState> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
       screenBreakpoint : '', 
       screenScrollY: 0 
     };
   }
+
 
   componentDidMount() {
     updateStateWithScreenBreakpoint(window, this);
