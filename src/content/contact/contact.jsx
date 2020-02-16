@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.scss';
 
-import ContentSection from './../../components/content-section/content-section.jsx';
+import ContentSection from './../../components/content-section/content-section.tsx';
 
 export default class ContactContent extends React.Component {
     constructor() {

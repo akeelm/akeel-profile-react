@@ -1,7 +1,7 @@
 import React from 'react';
 import './testimonials.scss';
 
-import ContentSection from './../../components/content-section/content-section.jsx';
+import ContentSection from './../../components/content-section/content-section.tsx';
 
 export default class TestimonialsContent extends React.Component {
     constructor() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.scss';
 
-import ContentSection from './../../components/content-section/content-section.jsx';
+import ContentSection from './../../components/content-section/content-section.tsx';
 
 import ProfileImage from './../../assets/images/profile.jpg';
 

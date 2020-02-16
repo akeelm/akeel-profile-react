@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects.scss';
 
-import ContentSection from './../../components/content-section/content-section.jsx';
+import ContentSection from './../../components/content-section/content-section.tsx';
 
 import ITEnergyLogo from './../../assets/images/projects/ITEnergy.png';
 import KingsCollegeLogo from './../../assets/images/projects/kings-college.png';
