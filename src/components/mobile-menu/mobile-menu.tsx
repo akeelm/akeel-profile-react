@@ -1,7 +1,7 @@
 import React from 'react';
 import './mobile-menu.scss';
 
-import MenuItems from '../../content/menu-items/menu-items.jsx';
+import MenuItems from '../../content/menu-items/menu-items';
 
 export interface IMobileMenuState {
     menuOpen: Boolean;
