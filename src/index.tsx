@@ -5,7 +5,7 @@ import MobileMenu from './components/mobile-menu/mobile-menu';
 import { Banner } from './components/banner/banner';
 import ScrollButton from './components/scroll-button/scroll-button';
 
-import About from './content/about/about.jsx';
+import About from './content/about/about';
 import Projects from './content/projects/projects.jsx';
 import Testimonials from './content/testimonials/testimonials.jsx';
 import Contact from './content/contact/contact.jsx';
