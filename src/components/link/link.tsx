@@ -1,17 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './link.scss';
 
-export default class Link extends React.Component {
-    constructor() {
-        super();
+export interface ILinkProps {
+    sectionName: string;
+    href: string;
+    title: string;
+}
+
+export default class Link extends React.Component<ILinkProps, {}> {
+    constructor(props: ILinkProps) {
+        super(props);
 
         this.scrollToSection = this.scrollToSection.bind(this);
     }
 
     scrollToSection(e) {
         e.preventDefault();
-        document.querySelector(`#${this.props.sectionName}`).scrollIntoView({
+        document.querySelector(`#${this.props.sectionName}`)?.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });

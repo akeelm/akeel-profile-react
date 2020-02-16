@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Link from './../../components/link/link.jsx';
+import Link from './../../components/link/link.tsx';
 
 export default class MenuItems extends React.Component {
     constructor() {
