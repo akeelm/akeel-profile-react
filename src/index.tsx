@@ -8,7 +8,7 @@ import ScrollButton from './components/scroll-button/scroll-button';
 import About from './content/about/about';
 import Projects from './content/projects/projects.jsx';
 import Testimonials from './content/testimonials/testimonials.jsx';
-import Contact from './content/contact/contact.jsx';
+import Contact from './content/contact/contact';
 
 import 'font-awesome/scss/font-awesome.scss';
 import './index.scss';
