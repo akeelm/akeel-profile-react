@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from './components/menu/menu.jsx';
 import MobileMenu from './components/mobile-menu/mobile-menu.jsx';
-import Banner from './components/banner/banner.jsx';
+import { Banner } from './components/banner/banner';
 import ScrollButton from './components/scroll-button/scroll-button.jsx';
 
 import About from './content/about/about.jsx';
@@ -49,7 +49,7 @@ class Index extends React.Component<{}, IIndexState> {
       <div>
         <div className="top_of_page"></div>
         {menu}
-        <Banner mainText="Akeel Mughal" secondaryText="fullstack developer" />
+        <Banner mainText="Akeel Mughal." secondaryText="react developer" />
         <About />
         <Testimonials />
         <Projects />
