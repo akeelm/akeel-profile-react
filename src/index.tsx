@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Menu from './components/menu/menu';
-import MobileMenu from './components/mobile-menu/mobile-menu.jsx';
+import MobileMenu from './components/mobile-menu/mobile-menu';
 import { Banner } from './components/banner/banner';
 import ScrollButton from './components/scroll-button/scroll-button.jsx';
 

@@ -1,11 +1,15 @@
 import React from 'react';
 import './mobile-menu.scss';
 
-import MenuItems from './../../content/menu-items/menu-items.jsx';
+import MenuItems from '../../content/menu-items/menu-items.jsx';
 
-export default class MobileMenu extends React.Component {
-    constructor() {
-        super();
+export interface IMobileMenuState {
+    menuOpen: Boolean;
+}
+
+export default class MobileMenu extends React.Component<{}, IMobileMenuState> {
+    constructor(props: {}) {
+        super(props);
 
         this.state = { menuOpen : false };
         this.toggleMenuClass = this.toggleMenuClass.bind(this);
