@@ -38,11 +38,12 @@
     font-weight: 200;
     display: block;
     position: relative;
-    top: -2em;
+    top: -1.25em;
+    width: 96%;
     @include respond-to(small) {
-        top: -1.2em;
+        top: -0.9em;
         font-size: 0.7em;
-        left: -2em;
+        left: -1em;
     }
     @include respond-to(medium) {
         font-size: 1.5em;

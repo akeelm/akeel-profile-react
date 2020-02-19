@@ -7,7 +7,7 @@ export const TestimonialsContent = () => {
   return (
     <ContentSection sectionName="Testimonials">
       <div className="testimonials">
-        <h1>Testimonials.</h1>
+        <h1>Testimonials</h1>
 
         <section>
           <i>

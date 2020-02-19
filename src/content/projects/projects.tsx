@@ -17,7 +17,7 @@ export const ProjectsContent = () => {
   return (
     <ContentSection sectionName="Projects">
       <div className="projects">
-        <h1>What I&apos;ve worked on.</h1>
+        <h1>What I&apos;ve worked on</h1>
 
         <section className="projects__container">
           <div className="projects__logos">

@@ -7,7 +7,7 @@ export const ContactContent = () => {
   return (
     <ContentSection sectionName="Contact">
       <div className="contact">
-        <h1>Contact me.</h1>
+        <h1>Contact me</h1>
         <div className="contact__container">
           <section className="contact__company_info">
             <b>AKEEL MUGHAL LTD © {new Date().getFullYear()}</b> <br />
