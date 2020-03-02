@@ -27,7 +27,7 @@ export const TestimonialsContent = () => {
             </p>
             <p>
               His work was always delivered on time and with high quality.
-              Towards the end of his contract Akeel help led a front end project
+              Towards the end of his contract Akeel help lead a front end project
               written in the latest front end technologies (react, redux,
               redux-sagas, react-testing-library) and it was clear Akeel cared
               about quality, maintenance and reusability.
@@ -37,7 +37,9 @@ export const TestimonialsContent = () => {
               very much like to work with him again!&quot;
             </p>
           </i>
-          <div className="testimonials__person">Tiago Morais -</div>
+          <div className="testimonials__person">
+            Tiago Morais - Team / Tech Lead - The Plum Guide
+          </div>
         </section>
 
         <section>

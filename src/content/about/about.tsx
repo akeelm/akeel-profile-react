@@ -27,8 +27,9 @@ export const AboutContent = () => {
 
         <p>
           The technologies I have experience with in the React / JavaScript ecosystem
-          are HoC's, React Hooks, ES6+, Typescript, Redux, Jest, Enzyme, React Testing Library,
-          Webpack, Grunt, CSS / LESS / SASS, Babel, React Router, React DnD and more.
+          are HoC's, React Hooks, ES6+, Typescript, Redux, Redux-Saga, Jest, Enzyme, 
+          React Testing Library, Webpack, Grunt, CSS / LESS / SASS, Babel, React Router,
+          React DnD and more.
         </p>
 
         <p>

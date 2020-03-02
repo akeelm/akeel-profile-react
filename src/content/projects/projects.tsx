@@ -12,12 +12,86 @@ const RALogo = require("./../../assets/images/projects/RA-logo.png");
 const SportEnglandLogo = require("./../../assets/images/projects/SportEngland.png");
 const FigleavesLogo = require("./../../assets/images/projects/figleaves_logo.png");
 const CiscoPhoto = require("./../../assets/images/projects/cisco-photo.jpg");
+const TraceOneLogo = require("./../../assets/images/projects/TraceOne.png");
+const PlumGuideLogo = require("./../../assets/images/projects/plum-guide.jpg");
 
 export const ProjectsContent = () => {
   return (
     <ContentSection sectionName="Projects">
       <div className="projects">
         <h1>What I&apos;ve worked on</h1>
+
+        <section className="projects__container">
+          <div className="projects__logos">
+            <div className="projects__logo">
+              <img
+                className="projects__image "
+                src={PlumGuideLogo}
+                alt="The Plum Guide"
+              />
+            </div>
+          </div>
+          <div className="projects__description">
+            <p>
+              I was contracted by The Plum Guide to work on various projects as
+              a developer with full stack experience across a React front-end, 
+              .NET C# back-end and SQL Server Databases.
+            </p>
+            <p>
+              Work was varied - reactive bug fixing, new features, performance 
+              improvements and A / B testing.
+            </p>
+            <p>
+              The last few weeks I lead the front-end for a listing building project.
+              The UI required complex drag and drop functionality, reordering sections
+              and photos as they are dragged around, amongst other interesting features.
+            </p>
+            <p>
+              A partially finished demo of the listing building project can be seen &#32;
+              <a href="https://www.loom.com/share/3018e7e3f1194563a612d234d19e8c37" target="_blank">here</a> &#32; 
+              (only partially completed due to back-end not being completed before handing over the project to
+              a permanent staff replacement)
+            </p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section className="projects__container">
+          <div className="projects__logos">
+            <div className="projects__logo">
+              <img
+                className="projects__image "
+                src={TraceOneLogo}
+                alt="Trace One"
+              />
+            </div>
+          </div>
+          <div className="projects__description">
+            <p>
+              I was contracted by Trace One to build the front-end of an auditing application
+              for use by the British Retail Consortium.
+            </p>
+            <p>
+              The front-end was developed using React (Hocs, hooks etc), ES6, Redux,
+              Redux-Saga, Redux-Form, React-Router, Webpack, Jest / enzyme tests.
+            </p>
+            <p>
+              The application made use of plenty of dynamic forms, complex custom controls,
+              complicated business logic and connected to several micro-services.
+            </p>
+            <p>
+              Part way through the project, the product owner left the company.
+              Having good knowledge I helped handover and assist with product ownership,
+              making decisions on functionality implementation based on business requirements
+              and time constraints, but also communicating with the business about delivery
+              and cross team communication where needed).
+            </p>
+          </div>
+        </section>
+
+        <hr />
+
 
         <section className="projects__container">
           <div className="projects__logos">
