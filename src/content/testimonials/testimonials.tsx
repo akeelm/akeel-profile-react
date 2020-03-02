@@ -12,6 +12,54 @@ export const TestimonialsContent = () => {
         <section>
           <i>
             <p>
+              &quot;Akeel was hired to help reinforce our multi disciplinary
+              team across a couple of full-stack projects, involving C#, .NET
+              MVC 6, .net core, react 16, redux, storybook and SCSS.
+            </p>
+
+            <p>
+              From the first day Akeel was quick to get up and running on his
+              own and quickly understood the most complex parts of our system
+              without needing much guidance, he showed passion and attention to
+              details which impressed our Product Managers and the rest our Tech
+              Team, his proactive and positive attitude even with complex
+              requirements made it very easy to work with him.
+            </p>
+            <p>
+              His work was always delivered on time and with high quality.
+              Towards the end of his contract Akeel help led a front end project
+              written in the latest front end technologies (react, redux,
+              redux-sagas, react-testing-library) and it was clear Akeel cared
+              about quality, maintenance and reusability.
+            </p>
+            <p>
+              It was a pleasure to work with a Akeel, and the whole team would
+              very much like to work with him again!&quot;
+            </p>
+          </i>
+          <div className="testimonials__person">Tiago Morais -</div>
+        </section>
+
+        <section>
+          <i>
+            <p>
+              &quot;Akeel was contracted by Trace One to work as a front end
+              developer on a new auditing application. In the time he has been
+              here he has worked on the back end code as well as the front,
+              assisted on-boarding the new PO to the project and is a natural
+              leader within the team. We will miss his fun personality, as well
+              as his professionalism and I hope to have the opportunity to work
+              with him again in the future.&quot;
+            </p>
+          </i>
+          <div className="testimonials__person">
+            Simon Wraight - Development and Quality Manager - Trace One
+          </div>
+        </section>
+
+        <section>
+          <i>
+            <p>
               &quot;Akeel was hired by us to develop and troubleshoot a software
               running a prototype medical device, requiring understanding of the
               clinical problem, the electronics and implementation.

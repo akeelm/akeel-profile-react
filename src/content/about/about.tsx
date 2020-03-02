@@ -28,7 +28,7 @@ export const AboutContent = () => {
         <p>
           The technologies I have experience with in the React / JavaScript ecosystem
           are HoC's, React Hooks, ES6+, Typescript, Redux, Jest, Enzyme, React Testing Library,
-          Webpack, Grunt, CSS/LESS/SASS, Babel, React Router, React DnD and more.
+          Webpack, Grunt, CSS / LESS / SASS, Babel, React Router, React DnD and more.
         </p>
 
         <p>
@@ -45,8 +45,8 @@ export const AboutContent = () => {
 
         <p>
           I also like to work quickly and effectively, and I'm proud of
-          my unique workflow - I use i3wm to manage workspaces and windows and
-          I make extensive use of Vi/Vim key bindings on anything I can.
+          my unique workflow - I use i3wm to manage workspaces / windows and
+          I make extensive use of Vi / Vim key bindings on anything I can.
         </p>
       </div>
     </ContentSection>
